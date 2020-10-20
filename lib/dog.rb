@@ -6,7 +6,7 @@ class Dog
   def initialize(name)
     @name = name
     @@all << self
-    @@names << name
+    @@names << @name
   end
 
   def self.all
@@ -18,7 +18,7 @@ class Dog
   end
 
   def self.print_all
-    puts @@names 
+    puts @@names
   end
 
 end
